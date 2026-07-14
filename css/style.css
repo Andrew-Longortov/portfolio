@@ -35,7 +35,9 @@ img {
   --bg-color: #f4f1ea;
   --text-color: #1b1e1f;
   --card-bg: #e6e1da;
-  --font-main: 'Courier New', monospace;
+  --font-main: 'IBM Plex Mono', monospace;
+  --font-weight: 400;
+  --fint-style: normal;
 }
 
 .container {
