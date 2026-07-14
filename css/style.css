@@ -57,6 +57,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-main);
+  padding: 2em;
 }
 
 /* TODO: стили header/nav */
