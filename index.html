@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Андрей Лонгортов — Frontend Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--
+    MILESTONE 1: HTML-скелет главной.
+    Разметь секции ниже семантическими тегами. Заголовки не пропускай:
+    один h1 на странице (обычно в Hero), дальше h2 для заголовков секций.
+  -->
+
+  <header>
+    <!-- TODO: логотип/имя + nav со ссылками на секции (#about, #stack, #projects, #contact) -->
+    <div class="container container-header">
+      <a href="/">
+        <img src="logo/logo-wordmark.svg" alt="Андрей Лонгортов">
+      </a>
+      <span class="logo-text">Андрей Лонгортов</span>
+      <nav class="menu">
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#stack">Мой стек</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: заголовок "Привет, я [Имя]", короткий текст о себе, кнопка-ссылка на #projects -->
+    <div class="container">
+      <section id="hero" class="section-hero">
+        <!-- TODO -->
+          <h1>Привет, меня зовут Андрей Лонгортов.</h1>
+          <p class="name_of_prof">Frontend Developer</p>
+          <p>Пишу различные приложения, сайты, скрипты.</p>
+          <p class="button_square"><a href="#projects">перейти к проектам</a></p>
+      </section>
+
+      <!-- About: фото/аватар + список фактов (имя, локация, email, статус фриланса) -->
+      <section id="about" class="section-about">
+        <!-- TODO -->
+        <h2>обо мне:</h2>
+          <div class="item-under-h2-about">
+            <div class="photo">
+              <img src="my_photo.png" alt="Фото профиля" width="200" class="my-photo">
+            </div>
+            <div class="info-list">
+              <ul>
+                <li>name</li>
+                <li>location</li>
+                <li>email</li>
+                <li>freelance</li>
+              </ul>
+              <ul>
+                <li>андрей лонгортов</li>
+                <li>земля</li>
+                <li>example@what.who</li>
+                <li>true</li>
+              </ul>
+            </div>
+          </div>
+      </section>
+
+      <!-- Tech Stack: список технологий, которые ты используешь. Пока просто текстом/списком -->
+      <section id="stack" class="section-stack">
+        <!-- TODO -->
+        <h2>мой стек:</h2>
+          <div class="item-under-h2">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+      </section>
+
+      <!-- Projects: 4 карточки — Калькулятор, Генератор паролей, Конвертер валют, Прогноз погоды.
+          Ссылки уже сейчас веди на соответствующие projects/*/index.html -->
+      <section id="projects" class="section-projects">
+          <!-- TODO -->
+          <h2>проекты:</h2>
+            <div class="grid-container">
+              <div class="grid-item">
+                <a href="projects/calculator/index.html">
+                  <h3>Калькулятор</h3>
+                  <img src="preview_calc.png" alt="превью калькулятора">
+                  <p>Простой, но элегантно выполненный калькулятор с базовыми функциями.</p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JS</li>
+                    </ul>
+                </a>
+              </div>
+              <div class="grid-item">
+                <a href="projects/password-generator/index.html">
+                  <h3>Генератор паролей</h3>
+                  <img src="preview_passgen.png" alt="превью генератора паролей">
+                  <p>Создает сложные пароли по заданным критериям.</p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JS</li>
+                    </ul>
+                </a>
+              </div>
+              <div class="grid-item">
+                <a href="projects/currency-converter/index.html">
+                  <h3>Конвертер валют</h3>
+                  <img src="preview_currency.png" alt="превью конвертера валют">
+                  <p>Конвертирует валюту используя живой курс.</p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JS</li>
+                      <li>API</li>
+                    </ul>
+                </a>
+              </div>
+              <div class="grid-item">
+                <a href="projects/weather-forecast/index.html">
+                    <h3>Прогноз погоды</h3>
+                    <img src="preview_weather.png" alt="превью прогноза погоды">
+                    <p>Отслеживает погоду в реальном времени в зависимости от местоположения.</p>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>API</li>
+                      </ul>
+                </a>
+              </div>
+            </div>
+      </section>
+
+      <!-- Contact: email, соцсети/GitHub -->
+      <section id="contact" class="section-contact">
+        <!-- TODO -->
+        <h2>давайте свяжемся:</h2>
+        <p>Если у Вас есть вопрос или Вам просто захотелось написать привет,
+          я открыт к диалогу!</p>
+        <ul>
+          <li>example@what.who</li>
+          <li>@exampleogmyinst</li>
+          <li>linkedin.com/in/exampleofmylinkedin</li>
+          <li>github.com/exampleifmygithub</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- TODO: копирайт -->
+    <div class="container">
+      <p class="copyright">© 2026 Андрей Лонгортов.</p>
+      <p class="footer_words">Создано с любовью и литрами кофе</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
