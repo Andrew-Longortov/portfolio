@@ -11,3 +11,22 @@
 //
 // Готовых решений здесь нет специально — это и есть часть обучения.
 // Когда что-то напишешь и застрянешь — пришли код или текст ошибки.
+
+const display = document.getElementById("display");
+
+function appendToDisplay(input){
+    display.value += input;
+}
+
+function clearDisplay(){
+    display.value = "";
+}
+
+function calculate(){
+    try {
+        display.value = eval(display.value);
+    }
+    catch(error) {
+        display.value = "Error";
+    }
+}

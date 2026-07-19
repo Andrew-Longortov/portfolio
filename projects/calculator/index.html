@@ -3,12 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg" href="../../logo/logo-wordmark.svg">
   <title>Калькулятор — Проекты</title>
+  <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <a href="../../index.html">&larr; На главную</a>
+  <header>
+    <div class="container container-header">
+      <a href="/">
+        <img src="../../logo/logo-wordmark.svg" alt="Андрей Лонгортов">
+      </a>
+      <span class="logo-text">Андрей Лонгортов</span>
+      <nav class="menu">
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#stack">Мой стек</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <!--
     MILESTONE 3: Калькулятор.
@@ -17,11 +33,31 @@
     Совет: каждой кнопке можно дать data-атрибут (data-value, data-action),
     чтобы в JS не писать 20 отдельных обработчиков.
   -->
-
-  <div id="calculator">
-    <!-- TODO: экран -->
-    <!-- TODO: кнопки -->
-  </div>
+    <main>
+      <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+          <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+          <button onclick="appendToDisplay(7)">7</button>
+          <button onclick="appendToDisplay(8)">8</button>
+          <button onclick="appendToDisplay(9)">9</button>
+          <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+          <button onclick="appendToDisplay(4)">4</button>
+          <button onclick="appendToDisplay(5)">5</button>
+          <button onclick="appendToDisplay(6)">6</button>
+          <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+          <button onclick="appendToDisplay(1)">1</button>
+          <button onclick="appendToDisplay(2)">2</button>
+          <button onclick="appendToDisplay(3)">3</button>
+          <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+          <button onclick="appendToDisplay(0)">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="clearDisplay()" class="operator-btn">C</button>
+        </div>
+      </div>
+    </main>
+  
 
   <script src="script.js"></script>
 </body>
